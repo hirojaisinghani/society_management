@@ -17,13 +17,9 @@ export class UserService {
         return this.http.post('http://111.93.82.91:3000/auth/signup/', user, this.jwt()).map((response: Response) => response.json());
     }
 
-    update(user: User) {
-        return this.http.put('/api/users/' + user.id, user, this.jwt()).map((response: Response) => response.json());
-    }
+    
 
-    delete(id: number) {
-        return this.http.delete('/api/users/' + id, this.jwt()).map((response: Response) => response.json());
-    }
+    
 
     // private helper methods
 

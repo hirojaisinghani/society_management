@@ -14,6 +14,8 @@ import { HomeComponent } from './home/index';
 import { AlertComponent } from './_directives/index';
 import { AuthGuard } from './_guards/index';
 import { AlertService, AuthenticationService, UserService } from './_services/index';
+import { ListMyVehiclesComponent } from './list-my-vehicles/list-my-vehicles.component';
+import { SearchVehiclesComponent } from './search-vehicles/search-vehicles.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { AlertService, AuthenticationService, UserService } from './_services/in
         AlertComponent,
         HomeComponent,
         LoginComponent,
-        RegisterComponent
+        RegisterComponent,
+        ListMyVehiclesComponent,
+        SearchVehiclesComponent
     ],
     providers: [
         AuthGuard,
